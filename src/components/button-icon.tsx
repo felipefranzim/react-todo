@@ -5,7 +5,7 @@ export const buttonIconVariants = cva("inline-flex items-center justify-center c
     variants: {
         variant: {
             primary: "bg-green-base hover:bg-green-dark",
-            secondary: "bg-pink-base hover:bg-pink-dark",
+            secondary: "bg-gray-200 hover:bg-pink-base",
             tertiary: "transparent hover:bg-gray-200"
         },
         size: {
