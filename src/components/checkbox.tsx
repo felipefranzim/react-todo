@@ -3,7 +3,7 @@ import Icon from "./icon";
 import CheckIcon from "../assets/icons/check.svg?react";
 import Skeleton from "./skeleton";
 
-export const chechboxWrapperVariants = cva(`
+export const checkboxWrapperVariants = cva(`
     inline-flex items-center justify-center relative group
 `);
 
@@ -60,7 +60,7 @@ export default function Checkbox({ variant, size, disabled, className, loading, 
                          className={checkboxVariants({ variant: "none", size })} />
     }
     return(
-        <label className={chechboxWrapperVariants({className})}>
+        <label className={checkboxWrapperVariants({className})}>
             <input type="checkbox" className={checkboxVariants({variant, size, disabled})} {...props} />
             <Icon svg={CheckIcon} className={checkboxIconVariants({size})} />
         </label>
